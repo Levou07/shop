@@ -42,7 +42,7 @@
         color: #fff;
         transition: 1s ease all;
         border-radius: 12px;
-        animation: bg 1s both;
+        animation: bg 1s infinite;
     }
     &::before{
         position: absolute;

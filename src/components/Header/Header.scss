@@ -36,11 +36,10 @@
 .active{
     position: relative;
     background-color: #252836;
-    transition: 1s ease all;
     a{
         background-color: #EA7C69;
         color: #fff;
-        transition: 4s ease all;
+        transition: 1s ease all;
         border-radius: 12px;
         animation: bg 5s infinite;
     }
@@ -61,10 +60,13 @@
 
 @keyframes bg {
     from{
-        box-shadow: 0px 0px 5px 5px #EA7C69;
-        transform: scale(0.9);
+        // box-shadow: 0px 0px 5px 5px #EA7C69;
+        outline: 2px solid #ea8e7e;
+        outline-offset: -4px;
     }
     to{
-        box-shadow: 0px 0px 5px 7px #faa292;
+        // box-shadow: 0px 0px 5px 6px #faa292;
+        outline: 2px solid #ea8e7e;
+        outline-offset: -8px;
     }
 }

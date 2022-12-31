@@ -40,9 +40,9 @@
     a{
         background-color: #EA7C69;
         color: #fff;
-        transition: 1s ease all;
+        transition: 4s ease all;
         border-radius: 12px;
-        animation: bg 1s infinite;
+        animation: bg 5s infinite;
     }
     &::before{
         position: absolute;
@@ -61,11 +61,10 @@
 
 @keyframes bg {
     from{
-        background-color: #eaa2a2;
-        color: #EA7C69;
+        box-shadow: 0px 0px 5px 5px #EA7C69;
+        transform: scale(0.9);
     }
     to{
-        transition: 2s ease all;
-        background-color: #EA7C69;
+        box-shadow: 0px 0px 5px 7px #faa292;
     }
 }

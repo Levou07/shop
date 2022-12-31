@@ -1,0 +1,71 @@
+.header{
+    background-color: #1F1D2B;
+    height: 100vh;
+    .logo{
+        padding: 24px;
+        display: block;
+    }
+    .logOut{
+        padding: 24px;
+        display: block;
+        color: #EA7C69;
+        background-color: transparent;
+        border: none;
+        margin: 0 auto;
+    }
+    &-list{
+        height: 70%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding-left: 12px;
+    }
+    &-item{
+        padding: 12px;
+        border-radius: 12px 0px 0px 12px;
+        a{
+            padding: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #EA7C69;
+        }
+    }
+}
+
+.active{
+    position: relative;
+    background-color: #252836;
+    transition: 1s ease all;
+    a{
+        background-color: #EA7C69;
+        color: #fff;
+        transition: 1s ease all;
+        border-radius: 12px;
+        animation: bg 1s both;
+    }
+    &::before{
+        position: absolute;
+        content: url('../../img/arrow.svg');
+        top: -14.5px;
+        right: -1px;
+    }
+    &::after{
+        position: absolute;
+        content: url('../../img/arrow.svg');
+        bottom: -14.5px;
+        right: -1px;
+        transform: rotateX(180deg);
+    }
+}
+
+@keyframes bg {
+    from{
+        background-color: #eaa2a2;
+        color: #EA7C69;
+    }
+    to{
+        transition: 2s ease all;
+        background-color: #EA7C69;
+    }
+}
